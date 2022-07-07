@@ -1,21 +1,21 @@
 # Tiêu chuẩn coding và cách đặt tên trong C#
 
 
-| Loại dữ liệu              | Cách Viết                | Độ dài | Số nhiều | Tiền tố| Hậu tố | Viết tắt     | Kí tự hợp lệ       | Chưa dấu gạch dưới|
-|:--------------------------|:-------------------------|-------:|:---------|:-------|:-------|:-------------|:-------------------|:------------------|
-| Tên Namespace             | ViếtHoaCácChữCáiĐầu      |    128 | Có       | Có     | Không  | Không        | [A-z][0-9]         | Không             |
-| Tên Lớp                   | ViếtHoaCácChữCáiĐầu      |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không             |
-| Tên Hàm dựng              | ViếtHoaCácChữCáiĐầu      |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không             |
-| Tên Hàm                   | ViếtHoaCácChữCáiĐầu      |    128 | Có       | Không  | Không  | Không        | [A-z][0-9]         | Không             |
-| Tên Tham Số Hàm           | viếtThườngChữCáiĐầuTiên  |    128 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
-| Tên Biến Cục Bộ           | viếtThườngChữCáiĐầuTiên  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
-| Tên Hằng                  | ViếtHoaCácChữCáiĐầu      |     50 | Không    | Không  | Không  | Không        | [A-z][0-9]         | Không             |
-| Tên Trường                | viếtThườngChữCáiĐầuTiên  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Có                |
-| Tên Thuộc tính            | ViếtHoaCácChữCáiĐầu      |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
-| Tên Delegate              | ViếtHoaCácChữCáiĐầu      |    128 | Không    | Không  | Có     | Có           | [A-z]              | Không             |
-| Tên Kiểu Enum             | ViếtHoaCácChữCáiĐầu      |    128 | Có       | Không  | Không  | Không        | [A-z]              | Không             |
+| Loại dữ liệu              | Cách Viết    | Độ dài | Số nhiều | Tiền tố| Hậu tố | Viết tắt     | Kí tự hợp lệ       | Chưa dấu gạch dưới|
+|:--------------------------|:-------------|-------:|:---------|:-------|:-------|:-------------|:-------------------|:------------------|
+| Tên Namespace             | PascalCasing |    128 | Có       | Có     | Không  | Không        | [A-z][0-9]         | Không             |
+| Tên Lớp                   | PascalCasing |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không             |
+| Tên Hàm dựng              | PascalCasing |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không             |
+| Tên Hàm                   | PascalCasing |    128 | Có       | Không  | Không  | Không        | [A-z][0-9]         | Không             |
+| Tên Tham Số Hàm           | camelCasing  |    128 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
+| Tên Biến Cục Bộ           | camelCasing  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
+| Tên Hằng                  | PascalCasing |     50 | Không    | Không  | Không  | Không        | [A-z][0-9]         | Không             |
+| Tên Trường                | camelCasing  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Có                |
+| Tên Thuộc tính            | PascalCasing |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
+| Tên Delegate              | PascalCasing |    128 | Không    | Không  | Có     | Có           | [A-z]              | Không             |
+| Tên Kiểu Enum             | PascalCasing |    128 | Có       | Không  | Không  | Không        | [A-z]              | Không             |
 
-#### 1. Cách dùng của cách Viết Hoa Các Chữ Cái Đầu (PascalCasing) để đặt tên cho lớp và hàm:
+#### 1. Sử dụng cách Viết Hoa Các Chữ Cái Đầu (PascalCasing) để đặt tên cho lớp và hàm:
 
 ```csharp
 public class ClientActivity
@@ -31,9 +31,9 @@ public class ClientActivity
 }
 ```
 
-***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu code.***
 
-#### 2. Cách dùng của cách viết Thường Chữ Cái Đầu Tiên (camelCasing) để đặt tên cho tên thuộc tính và tên tham số hàm:
+#### 2. Sử dụng cách viết Thường Chữ Cái Đầu Tiên (camelCasing) để đặt tên cho tên thuộc tính và tên tham số hàm:
 
 ```csharp
 public class UserLog
@@ -46,9 +46,9 @@ public class UserLog
 }
 ```
 
-***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu code.***
 
-#### 3. Không được sư dụng cách đặt tên theo kiểu Hungarian hay bất kì các loại khác cho khai báo biến:
+#### 3. Không được sử dụng cách đặt tên theo kiểu Hungarian hay bất kì các loại khác cho khai báo biến:
 
 ```csharp
 // Cách đặt tên đúng
@@ -61,7 +61,7 @@ string strName;
 
 ***Lí do: Thống nhất chung với cách đặt tên của Microsoft's .NET Framework và Visual Studio IDE nhằm xác định kiểu dữ liệu dễ dàng hơn ( sử dụng công cụ của IDE).Tóm lại, bạn cần tránh đặt tên biến kèm theo kiểu dữ liệu của biến.***
 
-#### 4. Không viết hoa tất cả các kí tự của hằng và biết readonly (chỉ đọc):
+#### 4. Không viết hoa tất cả các kí tự của hằng và biến readonly (chỉ đọc):
 
 ```csharp
 // Cách đặt tên đúng 
@@ -70,9 +70,9 @@ public const string ShippingType = "DropShip";
 public const string SHIPPINGTYPE = "DropShip";
 ```
 
-***Why: Thống nhất với cách đặt tênc của Microsoft's .NET Framework. Viết hoa thu hút nhiều sự chú ý không cần thiết.***
+***Lí do: Thống nhất với cách đặt tênc của Microsoft's .NET Framework. Viết hoa thu hút nhiều sự chú ý không cần thiết.***
 
-#### 5. Đặt tên một cách có ý nghĩa cho tên biến. Ví dụ sau đây sử dụng seattleCustomers cho customers sống ở Seattle:
+#### 5. Đặt tên một cách có ý nghĩa cho tên biến. Ví dụ sau đây sử dụng biến seattleCustomers cho các customers sống ở Seattle:
 
 ```csharp
 var seattleCustomers = from customer in customers
@@ -80,7 +80,7 @@ var seattleCustomers = from customer in customers
   select customer.Name;
 ```
 
-***Why: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu.***
+***Why: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu code.***
 
 #### 6. Tránh sử dụng từ viết tắt. Ngoại lệ: Các từ viết tắt thường được sử dụng cho các tên thông dụng, như là Id, Xml, Ftp, Uri.
 
@@ -287,7 +287,7 @@ public enum Dockings
 }
 ```
 
-***Lí do: Thống nhất với cách đặt tên của  Microsoft's .NET Framework và giúp code dễ đọc hiểu hơn. Được đặc số nhiều vì enum có thể chứa nhiều dữ liệu (sử dụng phép toán trên bit 'OR').***
+***Lí do: Thống nhất với cách đặt tên của  Microsoft's .NET Framework và giúp code dễ đọc hiểu code. Được đặc số nhiều vì enum có thể chứa nhiều dữ liệu (sử dụng phép toán trên bit 'OR').***
 
 #### 18. Không nên chỉ định rõ kiểu dữ liệu của enum hay giá trị của các trường trong enum (Trừ các trường bit):
 
