@@ -31,7 +31,7 @@ public class ClientActivity
 }
 ```
 
-***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu code.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
 #### 2. Sử dụng cách viết Thường Chữ Cái Đầu Tiên (camelCasing) để đặt tên cho tên thuộc tính và tên tham số hàm:
 
@@ -46,7 +46,7 @@ public class UserLog
 }
 ```
 
-***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu code.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
 #### 3. Không được sử dụng cách đặt tên theo kiểu Hungarian hay bất kì các loại khác cho khai báo biến:
 
@@ -80,7 +80,7 @@ var seattleCustomers = from customer in customers
   select customer.Name;
 ```
 
-***Why: Thống nhất với cách đặt tên của Microsoft's .NET Framework and và dễ đọc hiểu code.***
+***Why: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
 #### 6. Tránh sử dụng từ viết tắt. Ngoại lệ: Các từ viết tắt thường được sử dụng cho các tên thông dụng, như là Id, Xml, Ftp, Uri.
 
