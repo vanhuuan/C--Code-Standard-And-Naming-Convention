@@ -1,19 +1,19 @@
-# C# Coding Standards and Naming Conventions
+# Tiêu chuẩn coding và cách đặt tên trong C#
 
 
-| Object Name               | Notation   | Length | Plural | Prefix | Suffix | Abbreviation | Char Mask          | Underscores |
-|:--------------------------|:-----------|-------:|:-------|:-------|:-------|:-------------|:-------------------|:------------|
-| Namespace name            | PascalCase |    128 | Yes    | Yes    | No     | No           | [A-z][0-9]         | No          |
-| Class name                | PascalCase |    128 | No     | No     | Yes    | No           | [A-z][0-9]         | No          |
-| Constructor name          | PascalCase |    128 | No     | No     | Yes    | No           | [A-z][0-9]         | No          |
-| Method name               | PascalCase |    128 | Yes    | No     | No     | No           | [A-z][0-9]         | No          |
-| Method arguments          | camelCase  |    128 | Yes    | No     | No     | Yes          | [A-z][0-9]         | No          |
-| Local variables           | camelCase  |     50 | Yes    | No     | No     | Yes          | [A-z][0-9]         | No          |
-| Constants name            | PascalCase |     50 | No     | No     | No     | No           | [A-z][0-9]         | No          |
-| Field name                | camelCase  |     50 | Yes    | No     | No     | Yes          | [A-z][0-9]         | Yes         |
-| Properties name           | PascalCase |     50 | Yes    | No     | No     | Yes          | [A-z][0-9]         | No          |
-| Delegate name             | PascalCase |    128 | No     | No     | Yes    | Yes          | [A-z]              | No          |
-| Enum type name            | PascalCase |    128 | Yes    | No     | No     | No           | [A-z]              | No          |
+| Loại dữ liệu              | Ký hiệu    | Độ dài | Số nhiều | Tiền tố| Hậu tố | Viết tắt     | Kí tự hợp lệ       | Chưa dấu gạch dưới|
+|:--------------------------|:-----------|-------:|:---------|:-------|:-------|:-------------|:-------------------|:---------------|
+| Tên Namespace             | PascalCase |    128 | Có       | Có     | Không  | Không        | [A-z][0-9]         | Không          |
+| Tên Lớp                   | PascalCase |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không          |
+| Tên Hàm dựng              | PascalCase |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không          |
+| Tên Hàm                   | PascalCase |    128 | Có       | Không  | Không  | Không        | [A-z][0-9]         | Không          |
+| Tên Tham Số Hàm           | camelCase  |    128 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
+| Tên Biến Cục Bộ           | camelCase  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
+| Tên Hằng                  | PascalCase |     50 | Không    | Không  | Không  | Không        | [A-z][0-9]         | Không          |
+| Tên Trường                | camelCase  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Có             |
+| Tên Thuộc tính            | PascalCase |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
+| Tên Delegate              | PascalCase |    128 | Không    | Không  | Có     | Có           | [A-z]              | Không          |
+| Tên Kiểu Enum             | PascalCase |    128 | Có       | Không  | Không  | Không        | [A-z]              | Không          |
 
 #### 1. Do use PascalCasing for class names and method names:
 
