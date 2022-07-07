@@ -3,17 +3,17 @@
 
 | Loại dữ liệu              | Ký hiệu    | Độ dài | Số nhiều | Tiền tố| Hậu tố | Viết tắt     | Kí tự hợp lệ       | Chưa dấu gạch dưới|
 |:--------------------------|:-----------|-------:|:---------|:-------|:-------|:-------------|:-------------------|:---------------|
-| Tên Namespace             | PascalCase |    128 | Có       | Có     | Không  | Không        | [A-z][0-9]         | Không          |
-| Tên Lớp                   | PascalCase |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không          |
-| Tên Hàm dựng              | PascalCase |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không          |
-| Tên Hàm                   | PascalCase |    128 | Có       | Không  | Không  | Không        | [A-z][0-9]         | Không          |
-| Tên Tham Số Hàm           | camelCase  |    128 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
-| Tên Biến Cục Bộ           | camelCase  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
-| Tên Hằng                  | PascalCase |     50 | Không    | Không  | Không  | Không        | [A-z][0-9]         | Không          |
-| Tên Trường                | camelCase  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Có             |
-| Tên Thuộc tính            | PascalCase |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
-| Tên Delegate              | PascalCase |    128 | Không    | Không  | Có     | Có           | [A-z]              | Không          |
-| Tên Kiểu Enum             | PascalCase |    128 | Có       | Không  | Không  | Không        | [A-z]              | Không          |
+| Tên Namespace             | ViếtHoaChữCácCáiĐầu |    128 | Có       | Có     | Không  | Không        | [A-z][0-9]         | Không          |
+| Tên Lớp                   | ViếtHoaChữCácCáiĐầu |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không          |
+| Tên Hàm dựng              | ViếtHoaChữCácCáiĐầu |    128 | Không    | Không  | Có     | Không        | [A-z][0-9]         | Không          |
+| Tên Hàm                   | ViếtHoaChữCácCáiĐầu |    128 | Có       | Không  | Không  | Không        | [A-z][0-9]         | Không          |
+| Tên Tham Số Hàm           | viếtThườngChữCáiĐầuTiên  |    128 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
+| Tên Biến Cục Bộ           | viếtThườngChữCáiĐầuTiên  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
+| Tên Hằng                  | ViếtHoaChữCácCáiĐầu |     50 | Không    | Không  | Không  | Không        | [A-z][0-9]         | Không          |
+| Tên Trường                | viếtThườngChữCáiĐầuTiên  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Có             |
+| Tên Thuộc tính            | ViếtHoaChữCácCáiĐầu |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không          |
+| Tên Delegate              | ViếtHoaChữCácCáiĐầu |    128 | Không    | Không  | Có     | Có           | [A-z]              | Không          |
+| Tên Kiểu Enum             | ViếtHoaChữCácCáiĐầu |    128 | Có       | Không  | Không  | Không        | [A-z]              | Không          |
 
 #### 1. Do use PascalCasing for class names and method names:
 
