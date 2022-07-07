@@ -70,7 +70,7 @@ public const string ShippingType = "DropShip";
 public const string SHIPPINGTYPE = "DropShip";
 ```
 
-***Why: Thống nhất với cách đặt tênc của Microsoft's .NET Framework. Viết hoa thu hút quá nhiều sự chú ý.***
+***Why: Thống nhất với cách đặt tênc của Microsoft's .NET Framework. Viết hoa thu hút nhiều sự chú ý không cần thiết.***
 
 #### 5. Đặt tên một cách có ý nghĩa cho tên biến. Ví dụ sau đây sử dụng seattleCustomers cho customers sống ở Seattle:
 
@@ -98,10 +98,10 @@ FtpHelper ftpHelper;
 UriPart uriPart;
 ```
 
-***Why: Thống nhất với cách đặt tên của Microsoft's .NET Framework và tránh việc viết tắt không đồng đều.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và tránh việc viết tắt không đồng đều.***
 
 
-#### 7. Sử dụng PascalCasing or camelCasing (Depending on the identifier type) for abbreviations 3 characters or more (2 chars are both uppercase when PascalCasing is appropriate or inside the identifier).:
+#### 7. Sử dụng PascalCasing hoặc camelCasing (Tùy thuộc vào kiểu định danh) để viết tắt 3 ký tự hoặc hơn (2 ký đều viết hoa khi PascalCasing phù hợp hoặc có trong kiểu định danh).:
 
 ```csharp  
 HtmlHelper htmlHelper;
@@ -109,33 +109,33 @@ FtpTransfer ftpTransfer, fastFtpTransfer;
 UIControl uiControl, nextUIControl;
 ```
 
-***Why: consistent with the Microsoft's .NET Framework. Caps would grab visually too much attention.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework. Viết hoa thu hút nhiều sự chú ý không cần thiết.***
 
-#### 8. Do not use Underscores in identifiers. Exception: you can prefix private fields with an underscore:
+#### 8. Không nên sử dụng dấu gạch dưới trong việc đặt tên. Ngoại lệ: Tên biến private có thể được đánh dấu với dấu gạch dưới ở đầu:
 
 ```csharp 
-// Correct
+// Cách đặt đúng 
 public DateTime clientAppointment;
 public TimeSpan timeLeft;    
-// Avoid
+// Cách đặt cần tránh
 public DateTime client_Appointment;
 public TimeSpan time_Left; 
-// Exception (Class field)
+// Ngoại lệ (Thuộc tính private của lớp)
 private DateTime _registrationDate;
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and makes code more natural to read (without 'slur'). Also avoids underline stress (inability to see underline).***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và giúp đọc code một cách tự nhiên hơn. Đồng thời tránh việc gạch chân gây chú ý không cần thiết.***
 
-#### 9. Do use predefined type names (C# aliases) like `int`, `float`, `string` for local, parameter and member declarations. Do use .NET Framework names like `Int32`, `Single`, `String` when accessing the type's static members like `Int32.TryParse` or `String.Join`.
+#### 9. Sử dụng các kiểu dữ liệu được định nghĩa trước (Được đặc tên bởi C#) như `int`, `float`, `string` cho việc khai báo biến cục bộ, tham số hay thuộc tính của lớp. Sử dụng kiểu dữ liệu của .NET Framework như `Int32`, `Single`, `String` khi truy cập các thành viên tĩnh của lớp như `Int32.TryParse` or `String.Join`.
 
 ```csharp
-// Correct
+// Cách dùng đúng 
 string firstName;
 int lastIndex;
 bool isSaved;
 string commaSeparatedNames = String.Join(", ", names);
 int index = Int32.Parse(input);
-// Avoid
+// Cách dùng cần tránh 
 String firstName;
 Int32 lastIndex;
 Boolean isSaved;
@@ -143,22 +143,22 @@ string commaSeparatedNames = string.Join(", ", names);
 int index = int.Parse(input);
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and makes code more natural to read.*** 
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và khiến việc đọc code một cách dễ dàng hơn.*** 
 
-#### 10. Do use implicit type var for local variable declarations. Exception: primitive types (int, string, double, etc) use predefined names. 
+#### 10. Sử dụng kiểu ngầm định cho các biến cục bộ. Ngoại lệ: Các biến có kiểu dữ liệu nguyên thủy (int, string, double, etc) sử dụng tên được định nghĩa trước. 
 
 ```csharp 
 var stream = File.Create(path);
 var customers = new Dictionary();
-// Exceptions
+// Ngoại lệ
 int index = 100;
 string timeSheet;
 bool isCompleted;
 ```
 
-***Why: removes clutter, particularly with complex generic types. Type is easily detected with Visual Studio tooltips.***
+***Lí do: Loại bỏ lộn xộn, khó hiểu khi sử dụng kiểu dữ liệu động phức tạp. Kiểu dữ liệu có thể xem được dễ dàng khi sử dụng công cụ của Visual Studio.***
 
-#### 11. Do use noun or noun phrases to name a class. 
+#### 11. Sử dụng danh từ hoặc cụm danh từ để đặt tên cho lớp.
 
 ```csharp 
 public class Employee
@@ -172,9 +172,9 @@ public class DocumentCollection
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and easy to remember.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ nhớ.***
 
-#### 12. Do prefix interfaces with the letter I. Interface names are noun (phrases) or adjectives.
+#### 12. Sử dụng tiền tố I khi đặt tên cho Interface. Tên của Interface có thể là danh từ (cụm danh từ) hoặc tính từ.
 
 ```csharp     
 public interface IShape
@@ -188,9 +188,9 @@ public interface IGroupable
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework.***
 
-#### 13. Do name source files according to their main classes. Exception: file names with partial classes reflect their source or purpose, e.g. designer, generated, etc. 
+#### 13. Đặt tên file theo tên của class chính được định nghĩa trong file. Ngoại lệ: Tên file chứa các lớp partial nên thể hiện nguồn hoặc mục đích của nó như , e.g. designer, generated, ....
 
 ```csharp 
 // Located in Task.cs
@@ -203,12 +203,12 @@ public partial class Task
 }
 ```
 
-***Why: consistent with the Microsoft practices. Files are alphabetically sorted and partial classes remain adjacent.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft practices. File được sắp xếp bởi tên File theo alphabet, các lớp partial được sắp xếp liền kề.***
 
-#### 14. Do organize namespaces with a clearly defined structure: 
+#### 14. Đặc tên namespace một cách có sắp xếp và có cấu trúc rõ ràng:
 
 ```csharp 
-// Examples
+// Ví dụ
 namespace Company.Technology.Feature.Subnamespace
 {
 }
@@ -223,9 +223,9 @@ namespace Product.Layer.Module.Group
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework. Maintains good organization of your code base.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework. Giữ cho cấu trúc code tốt.***
 
-#### 15. Do vertically align curly brackets: 
+#### 15. Cần căn lề chính xác các dấu ngoặc nhọn theo chiều dọc: 
 
 ```csharp 
 // Correct
@@ -238,12 +238,12 @@ class Program
 }
 ```
 
-***Why: Microsoft has a different standard, but developers have overwhelmingly preferred vertically aligned brackets.***
+***Lí do: Microsoft có tiêu chuẩn khác, nhưng với các nhà phát triển căn lề chính xác các dấu ngoặc nhọn theo chiều dọc được ưu tiên hơn nhiều.***
 
-#### 16. Do declare all member variables at the top of a class, with static variables at the very top.
+#### 16. Khai báo các thành viên của lớp ở trên đầu của định nghĩa lớp, với các biến static thì cần được đặt lên trên tất cả.
 
 ```csharp 
-// Correct
+// Cách khai báo đúng
 public class Account
 {
   public static string BankName;
@@ -260,9 +260,9 @@ public class Account
 }
 ```
 
-***Why: generally accepted practice that prevents the need to hunt for variable declarations.***
+***Lí do: Tìm kiếm các biến nhanh hơn, tránh việc tìm kiếm biến.***
 
-#### 17. Do use singular names for enums. Exception: bit field enums.
+#### 17. Sử dụng tên biến là số ít cho kiểu enums. Ngoại lệ: Enums có các trường có kiểu dữ liệu là bit.
 
 ```csharp 
 // Correct
@@ -275,7 +275,7 @@ public enum Color
   Magenta,
   Cyan
 } 
-// Exception
+// Ngoại lệ
 [Flags]
 public enum Dockings
 {
@@ -287,12 +287,12 @@ public enum Dockings
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and makes the code more natural to read. Plural flags because enum can hold multiple values (using bitwise 'OR').***
+***Lí do: Thống nhất với cách đặt tên của  Microsoft's .NET Framework và giúp code dễ đọc hiểu hơn. Được đặc số nhiều vì enum có thể chứa nhiều dữ liệu (sử dụng phép toán trên bit 'OR').***
 
-#### 18. Do not explicitly specify a type of an enum or values of enums (except bit fields):
+#### 18. Không nên chỉ định rõ kiểu dữ liệu của enum hay giá trị của các trường trong enum (Trừ các trường bit):
 
 ```csharp 
-// Don't
+// Cách không nên dùng
 public enum Direction : long
 {
   North = 1,
@@ -300,7 +300,7 @@ public enum Direction : long
   South = 3,
   West = 4
 } 
-// Correct
+// Cách dùng đúng
 public enum Direction
 {
   North,
@@ -310,12 +310,12 @@ public enum Direction
 }
 ```
 
-***Why: can create confusion when relying on actual types and values.***
+***Lí do: Có thể tạo ra sự nhầm lẫn khi dựa và loại thực tế và các giá trị.***
 
-#### 19. Do not use an "Enum" suffix in enum type names:
+#### 19. Không nên thêm hậu tố enum khi đặt tên cho enum:
 
 ```csharp     
-// Don't
+// Cách đặt tên không nên
 public enum CoinEnum
 {
   Penny,
@@ -324,7 +324,7 @@ public enum CoinEnum
   Quarter,
   Dollar
 } 
-// Correct
+// Cách đặt tên đúng 
 public enum Coin
 {
   Penny,
@@ -335,12 +335,12 @@ public enum Coin
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and consistent with prior rule of no type indicators in identifiers.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và thống nhất với quy tắc không đặc mục đính sử dụng trong tên định danh.***
 
-#### 20. Do not use "Flag" or "Flags" suffixes in enum type names:
+#### 20. Không sử dụng "Flag" hoặc "Flag" là hậu tố trong tên enum:
 
 ```csharp 
-// Don't
+// Cách đặt tên không nên dùng 
 [Flags]
 public enum DockingsFlags
 {
@@ -350,7 +350,7 @@ public enum DockingsFlags
   Bottom = 4,
   Left = 8
 }
-// Correct
+// Cách đặt tên đúng
 [Flags]
 public enum Dockings
 {
@@ -362,28 +362,28 @@ public enum Dockings
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and consistent with prior rule of no type indicators in identifiers.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và thống nhất với quy tắc không đặc mục đính sử dụng trong tên định danh.***
 
-#### 21. Do use suffix EventArgs at creation of the new classes comprising the information on event:
+#### 21. Sử dụng hậu tốt "EventArgs" khi đặt tên cho lớp chứa thông tin về sự kiện:
 
 ```csharp 
-// Correct
+// Cách dùng đúng 
 public class BarcodeReadEventArgs : System.EventArgs
 {
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and easy to read.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 22. Do name event handlers (delegates used as types of events) with the "EventHandler" suffix, as shown in the following example:
+#### 22. Đặc tên cho event handler (delegate cũng được sử dụng như là kiểu của sự kiện) phải có hậu tố "EventHandler" như ví dụ sau đây:
 
 ```csharp 
 public delegate void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs e);
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and easy to read.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 23. Do not create names of parameters in methods (or constructors) which differ only by the register:
+#### 23. Không đặt tên tham số của hàm (kể cả hàm dựng) giống nhau, chỉ khác nhau ít. 
 
 ```csharp 
 // Avoid
@@ -393,9 +393,9 @@ private void MyFunction(string name, string Name)
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and easy to read, and also excludes possibility of occurrence of conflict situations.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework , dễ đọc hiểu code, và loại trừ các trường hợp nhầm lẫn.***
 
-#### 24. DO use two parameters named sender and e in event handlers. The sender parameter represents the object that raised the event. The sender parameter is typically of type object, even if it is possible to employ a more specific type.
+#### 24. Sử dụng 2 tham số là sender và e trong envent handlers. Tham số sender thể hiện đối tượng tạo ra event. Tham số sender thường có kiểu dữ liệu là object cho dù có thể đặc một kiểu dữ liệu cụ thể hơn:
 
 ```csharp
 public void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs e)
@@ -404,32 +404,31 @@ public void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs e)
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and consistent with prior rule of no type indicators in identifiers.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và thống nhất với quy tắc không đặc mục đính sử dụng trong tên định danh.***
 
-#### 25. Do use suffix Exception at creation of the new classes comprising the information on exception:
-
+#### 25. Sử dụng hậu tố "Exception" cho việc đặc tên các lớp chưa thông tin về các exception:
 ```csharp 
-// Correct
+// Cách đặt tên đúng 
 public class BarcodeReadException : System.Exception
 {
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and easy to read.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 26. Do use prefix Any, Is, Have or similar keywords for boolean identifier:
+#### 26. Sử dụng các tiền tố "Any" hoặc "Is" hoặc các từ có ý nghĩa tương tự cho kiểu định danh có dữ liệu dạng boolean:
 
 ```csharp 
-// Correct
+// Cách đặt tên đúng
 public static bool IsNullOrEmpty(string value) {
     return (value == null || value.Length == 0);
 }
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and easy to read.***
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 27. Use Named Arguments in method calls:
-When calling a method, arguments are passed with the parameter name followed by a colon and a value. 
+#### 27. Sử dụng tên tham số của hàm khi gọi hàm:
+Khi gọi một hàm, các tham số được truyền theo tên sử dụng dấu ":" và giá trị cần truyền.
 
 ```csharp
 // Method
@@ -438,15 +437,15 @@ public void DoSomething(string foo, int bar)
 ...
 }
 
-// Avoid
+// Cách dùng cần tránh
 DoSomething("someString", 1);
-// Correct
+// Cách dùng chính xác 
 DoSomething(foo: "someString", bar: 1);
 ```
 
-***Why: consistent with the Microsoft's .NET Framework and easy to read. In Named Arguments, we do not need to pass the parameters in order as defined on method definition, so we can pass the arguments in any order on method calling.***
+***WLí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code. Khi sử dụng các tham số được đặt tên, chúng ta không cần đặt các tham số theo đúng thứ tự mà ta định sẵn trong hàm, vì thế chúng ta có thể đặt tham số theo bất kỳ thứ tự nào trong lời gọi hàm.
 
-## Offical Reference
+## Tài liệu tham khảo
 
 1. [MSDN General Naming Conventions](http://msdn.microsoft.com/en-us/library/ms229045(v=vs.110).aspx)
 2. [DoFactory C# Coding Standards and Naming Conventions](http://www.dofactory.com/reference/csharp-coding-standards) 
