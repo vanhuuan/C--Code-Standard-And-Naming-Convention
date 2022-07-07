@@ -364,7 +364,7 @@ public enum Dockings
 
 ***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và thống nhất với quy tắc không đặc mục đính sử dụng trong tên định danh.***
 
-#### 21. Sử dụng hậu tốt "EventArgs" khi đặt tên cho lớp chứa thông tin về sự kiện:
+#### 21. Sử dụng hậu tố "EventArgs" khi đặt tên cho lớp chứa thông tin về sự kiện:
 
 ```csharp 
 // Cách đặt tên đúng 
@@ -375,7 +375,19 @@ public class BarcodeReadEventArgs : System.EventArgs
 
 ***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 22. Đặc tên cho event handler (delegate cũng được sử dụng như là kiểu của sự kiện) phải có hậu tố "EventHandler" như ví dụ sau đây:
+#### 22. Sử dụng hậu tố "Async" khi đặt tên cho hàm bất đồng bộ chứa các từ khóa "await" hoặc "async":
+
+```csharp 
+// Cách đặt tên đúng 
+private async Task<int> GetAgeAsync(DateTime birthDay)
+{
+  //...
+}
+```
+
+***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
+
+#### 23. Đặc tên cho event handler (delegate cũng được sử dụng như là kiểu của sự kiện) phải có hậu tố "EventHandler" như ví dụ sau đây:
 
 ```csharp 
 public delegate void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs e);
@@ -383,7 +395,7 @@ public delegate void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs
 
 ***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 23. Không đặt tên tham số của hàm (kể cả hàm dựng) giống nhau, chỉ khác nhau ít. 
+#### 24. Không đặt tên tham số của hàm (kể cả hàm dựng) giống nhau, chỉ khác nhau ít. 
 
 ```csharp 
 // Cách đặt tên nên tránh
@@ -395,7 +407,7 @@ private void MyFunction(string name, string Name)
 
 ***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework , dễ đọc hiểu code, và loại trừ các trường hợp nhầm lẫn.***
 
-#### 24. Sử dụng 2 tham số là sender và e trong envent handlers. Tham số sender thể hiện đối tượng tạo ra event. Tham số sender thường có kiểu dữ liệu là object cho dù có thể đặc một kiểu dữ liệu cụ thể hơn:
+#### 25. Sử dụng 2 tham số là sender và e trong envent handlers. Tham số sender thể hiện đối tượng tạo ra event. Tham số sender thường có kiểu dữ liệu là object cho dù có thể đặc một kiểu dữ liệu cụ thể hơn:
 
 ```csharp
 public void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs e)
@@ -406,7 +418,7 @@ public void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs e)
 
 ***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và thống nhất với quy tắc không đặc mục đính sử dụng trong tên định danh.***
 
-#### 25. Sử dụng hậu tố "Exception" cho việc đặc tên các lớp chưa thông tin về các exception:
+#### 26. Sử dụng hậu tố "Exception" cho việc đặc tên các lớp chưa thông tin về các exception:
 ```csharp 
 // Cách đặt tên đúng 
 public class BarcodeReadException : System.Exception
@@ -416,7 +428,7 @@ public class BarcodeReadException : System.Exception
 
 ***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 26. Sử dụng các tiền tố "Any" hoặc "Is" hoặc các từ có ý nghĩa tương tự cho kiểu định danh có dữ liệu dạng boolean:
+#### 27. Sử dụng các tiền tố "Any" hoặc "Is" hoặc các từ có ý nghĩa tương tự cho kiểu định danh có dữ liệu dạng boolean:
 
 ```csharp 
 // Cách đặt tên đúng
@@ -427,7 +439,7 @@ public static bool IsNullOrEmpty(string value) {
 
 ***Lí do: Thống nhất với cách đặt tên của Microsoft's .NET Framework và dễ đọc hiểu code.***
 
-#### 27. Sử dụng tên tham số của hàm khi gọi hàm:
+#### 28. Sử dụng tên tham số của hàm khi gọi hàm:
 Khi gọi một hàm, các tham số được truyền theo tên sử dụng dấu ":" và giá trị cần truyền.
 
 ```csharp
