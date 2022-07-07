@@ -193,11 +193,11 @@ public interface IGroupable
 #### 13. Đặt tên file theo tên của class chính được định nghĩa trong file. Ngoại lệ: Tên file chứa các lớp partial nên thể hiện nguồn hoặc mục đích của nó như , e.g. designer, generated, ....
 
 ```csharp 
-// Located in Task.cs
+// Đặt trong file Task.cs
 public partial class Task
 {
 }
-// Located in Task.generated.cs
+// Đặt trong file Task.generated.cs
 public partial class Task
 {
 }
@@ -228,7 +228,7 @@ namespace Product.Layer.Module.Group
 #### 15. Cần căn lề chính xác các dấu ngoặc nhọn theo chiều dọc: 
 
 ```csharp 
-// Correct
+// Cách căn lề đúng
 class Program
 {
   static void Main(string[] args)
@@ -252,7 +252,7 @@ public class Account
   public DateTime DateOpened { get; set; }
   public DateTime DateClosed { get; set; }
   public decimal Balance { get; set; }     
-  // Constructor
+  // Hàm dựng
   public Account()
   {
     // ...
@@ -265,7 +265,7 @@ public class Account
 #### 17. Sử dụng tên biến là số ít cho kiểu enums. Ngoại lệ: Enums có các trường có kiểu dữ liệu là bit.
 
 ```csharp 
-// Correct
+// Cách khai báo đúng
 public enum Color
 {
   Red,
@@ -367,7 +367,7 @@ public enum Dockings
 #### 21. Sử dụng hậu tốt "EventArgs" khi đặt tên cho lớp chứa thông tin về sự kiện:
 
 ```csharp 
-// Cách dùng đúng 
+// Cách đặt tên đúng 
 public class BarcodeReadEventArgs : System.EventArgs
 {
 }
@@ -386,7 +386,7 @@ public delegate void ReadBarcodeEventHandler(object sender, ReadBarcodeEventArgs
 #### 23. Không đặt tên tham số của hàm (kể cả hàm dựng) giống nhau, chỉ khác nhau ít. 
 
 ```csharp 
-// Avoid
+// Cách đặt tên nên tránh
 private void MyFunction(string name, string Name)
 {
   //...
@@ -431,7 +431,7 @@ public static bool IsNullOrEmpty(string value) {
 Khi gọi một hàm, các tham số được truyền theo tên sử dụng dấu ":" và giá trị cần truyền.
 
 ```csharp
-// Method
+// Hàm 
 public void DoSomething(string foo, int bar) 
 {
 ...
