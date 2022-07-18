@@ -10,8 +10,8 @@
 | Tên Tham Số Hàm           | camelCasing  |    128 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
 | Tên Biến Cục Bộ           | camelCasing  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
 | Tên Hằng                  | PascalCasing |     50 | Không    | Không  | Không  | Không        | [A-z][0-9]         | Không             |
-| Tên Trường                | camelCasing  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Có                |
-| Tên Thuộc tính            | PascalCasing |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
+| Tên Trường và Thuộc Tính Private hoặc Internal (Static)              | camelCasing  |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Có                |
+| Tên Trường và Thuộc tính Public (Static)           | PascalCasing |     50 | Có       | Không  | Không  | Có           | [A-z][0-9]         | Không             |
 | Tên Delegate              | PascalCasing |    128 | Không    | Không  | Có     | Có           | [A-z]              | Không             |
 | Tên Kiểu Enum             | PascalCasing |    128 | Có       | Không  | Không  | Không        | [A-z]              | Không             |
 
